@@ -65,7 +65,7 @@ def main():
         pipe_spawn_time += time
 
         if pipe_spawn_time > pipe_interval:
-            pos=[288 + 52,  random.randint(80, 432)]
+            pos=[288 + 52,  random.randint(150, 390)]
             Pipes(pos,allgroups, colongroup, birdgroup)
             pipe_spawn_time = 0
             score += 1
