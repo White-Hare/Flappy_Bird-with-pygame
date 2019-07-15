@@ -1,4 +1,5 @@
 import pygame as pg
+import scoring
 from Bird import *
 from Pipes import *
 
@@ -70,6 +71,8 @@ def main():
 
         allgroups.update(time)
         allgroups.draw(screen)
+        
+        scoring.score_blitting(screen, score)
 
         pg.display.flip()
 
