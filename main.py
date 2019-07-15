@@ -14,6 +14,8 @@ def main():
     
     bg=pg.image.load("background-day.png")
     bg.convert_alpha()
+    
+    score = -1
 
     rect=bg.get_rect()
 
@@ -66,6 +68,7 @@ def main():
             pos=[288 + 52,  random.randint(80, 432)]
             Pipes(pos,allgroups, colongroup, birdgroup)
             pipe_spawn_time = 0
+            score += 1
             del pos
 
 
